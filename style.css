@@ -1,1 +1,11 @@
-/* new style css */
+/* new style css for lists in .lists*/
+.lists ul:hover {
+    cursor:pointer;
+    color: brown;
+    text-align: center;
+    padding:0;
+    font-size: 20;
+}
+.lists il:hover {
+    font-size: 18;
+}
