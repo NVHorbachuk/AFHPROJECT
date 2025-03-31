@@ -1,3 +1,7 @@
+.comment-section {
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+    padding: 0 32px;
+}
 .image-container {
     position: relative;
     width: 120px;
@@ -32,9 +36,11 @@
     gap: 10px; /* Відстань між текстом і автором */
 }
 
-.left-comment .right-comment {
+.left-comment, .right-comment {
     display: flex;
     flex-direction: column;
+    padding: 0 30px;
+
 }
 .text-comment span {
     font-size: 16px;
@@ -52,6 +58,7 @@
     align-items: flex-start;
     gap: 15px;
     max-width: 100%;
+    padding: 7.5px 0;
 }
 /* Зовнішній контейнер */
 .comment-wrapper {
@@ -86,9 +93,5 @@
     color: #333; /* Колір тексту (налаштуй) */
 }
 
-/* Стилі для зірочки */
-.asterisk {
-    font-size: 24px; /* Розмір зірочки (налаштуй) */
-    color: rgb(255,116,51); /* Колір зірочки (наприклад, червоний) */
-}
+
 
