@@ -1,0 +1,93 @@
+.image-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.logo-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: 50% 50%;
+    border-radius: 50%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Контейнер для тексту і автора */
+.text-comment {
+    display: flex;
+    flex-direction: column; /* Текст і автор у стовпчик */
+    gap: 10px; /* Відстань між текстом і автором */
+}
+
+.left-comment .right-comment {
+    display: flex;
+    flex-direction: column;
+}
+.text-comment span {
+    font-size: 16px;
+    color: #333; /* Колір тексту (налаштуй) */
+}
+
+.author p {
+    margin: 0;
+    font-weight: bold;
+    color: #666; /* Колір автора (налаштуй) */
+}
+
+.photo-with-text {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    max-width: 100%;
+}
+/* Зовнішній контейнер */
+.comment-wrapper {
+    display: flex; /* Горизонтальне розміщення блоків */
+    justify-content: space-between; /* Текст по обидва боки */
+    align-items: flex-start; /* Вирівнювання по верху */
+    max-width: 1200px; /* Обмеження ширини */
+    margin: 0 auto; /* Центрування */
+    padding: 20px; /* Внутрішні відступи (опціонально) */
+}
+
+/* Блок із зірочкою і текстом */
+.warm-words {
+    display: flex;
+    flex-direction: column; /* Зірочка над текстом */
+    align-items: flex-start; /* Вирівнювання зліва */
+    gap: 5px; /* Відстань між зірочкою і текстом */
+}
+
+/* Блок із коментарем */
+.warm-comment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    max-width: 50%;
+}
+
+/* Стилі для тексту */
+.text {
+    font-size: 16px;
+    color: #333; /* Колір тексту (налаштуй) */
+}
+
+/* Стилі для зірочки */
+.asterisk {
+    font-size: 24px; /* Розмір зірочки (налаштуй) */
+    color: #ff0000; /* Колір зірочки (наприклад, червоний) */
+}
