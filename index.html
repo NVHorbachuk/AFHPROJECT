@@ -1,15 +1,32 @@
 <html>
 <head>
 <title>Enter a title, displayed at the top of the window.</title>
+
 </head>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="yw-section.css">
-<link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<link rel="import" href="header.html">
-<link rel="import" href="footer.html">
-<!-- The information between the BODY and /BODY tags is displayed.-->
+
+
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="yw-section.css">
+    <link rel="stylesheet" href="footer.css">
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+</head>
 <body>
+    <!-- Тут хедер -->
+    <header></header>
+    <!-- The information between the BODY and /BODY tags is displayed.-->
+<main>
     <div class="background-fixed"></div>
     <section class="comment-section">
         <div class="comment-wrapper">
@@ -73,12 +90,14 @@
                     <div class="text-comment">
                         <em>"AFHWave is not just a radio station; it's a companion on my journey to better mental health. The insightful interviews, personal stories, and practical tips provide a comforting space for self-reflection and growth."</em>
                         <div class="author">
-                            <p>VICTOR KRYPIN</p>
+                            <p>VICTOR KRUPIN</p>
                         </div>
                     </div>
             </div>
         </div>
     </section>
-    
+</main>
+<!-- Тут Футер -->
+<footer data-hx-get="footer.html" data-hx-trigger="load" data-hx-swap="outerHTML"></footer>
 </body>
 </html>

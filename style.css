@@ -1,4 +1,9 @@
 /* new style css for lists in .lists*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
 .lists ul:hover {
     cursor:pointer;
     color: brown;
