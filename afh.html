@@ -6,19 +6,26 @@
 <link rel="stylesheet" href="yw-section.css">
 <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="import" href="header.html">
+<link rel="import" href="footer.html">
 <!-- The information between the BODY and /BODY tags is displayed.-->
 <body>
+    <div class="background-fixed"></div>
     <section class="comment-section">
         <div class="comment-wrapper">
             <div class="warm-words">
                 <span style="color: rgb(255,116,51);">*</span>
-                <span class="text">your warm words</span>
+                <span class="warm-text-words">your warm words</span>
             </div>
             <div class="warm-comment">
-                <span class="text">We are happy to receive so many warm words about our broadcasts from the audience.</span>
+                <span class="warm-comment-text">We are happy to receive so many warm words about our broadcasts from the audience.</span>
             </div>
         </div>
-        <hr>
+        <!-- роздільник в контейнері -->
+        <div class="container">
+            <hr class="divider" style="grid-column: 1 / -1;">
+        </div>
+        
         <div class="container">
             <div class="left-comment">
                 <div class="photo-with-text">
