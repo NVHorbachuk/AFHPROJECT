@@ -1,8 +1,6 @@
-/* new style css for lists in .lists*/
 /* Основні стилі для заголовка */
 .site-header {
-    background: linear-gradient(rgba(0, 44, 74, 0.9), rgba(0, 44, 74, 0.9)),
-    url('//res2.weblium.site/res/6554b83cf9e5500010a0c6b9/655dfb8ad58255000ede5ecb') center/cover no-repeat fixed;
+    background-color: #ffffff; /* або інший колір фону */
     padding: 10px 0;
     border-bottom: 1px solid #e1e1e1; /* тонка лінія під заголовком */
 }
@@ -77,9 +75,8 @@
     }
 }
 .features-section {
-    background: 
-    linear-gradient(rgba(0, 44, 74, 0.9), rgba(0, 44, 74, 0.9)),
-    url('//res2.weblium.site/res/6554b83cf9e5500010a0c6b9/655dfb8ad58255000ede5ecb') center/cover no-repeat fixed;
+    background-color: #18189c;
+    background-image: url('img/bg.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
@@ -106,9 +103,7 @@
 }
 
 .feature-item {
-    background: 
-    linear-gradient(rgba(0, 44, 74, 0.9), rgba(0, 44, 74, 0.9)),
-    url('//res2.weblium.site/res/6554b83cf9e5500010a0c6b9/655dfb8ad58255000ede5ecb') center/cover no-repeat fixed;
+    background: rgb(114, 70, 70);
     padding: 30px;
     border-radius: 10px;
     width: 30%;
@@ -150,9 +145,6 @@
 }
 .three-sections {
     .section-block {
-        background: 
-        linear-gradient(rgba(0, 44, 74, 0.9), rgba(0, 44, 74, 0.9)),
-        url('//res2.weblium.site/res/6554b83cf9e5500010a0c6b9/655dfb8ad58255000ede5ecb') center/cover no-repeat fixed;
         text-align: center;
         color: white;
         padding: 30px;
@@ -162,9 +154,7 @@
       }
       
       .section-block img {
-        background: 
-        linear-gradient(rgba(0, 44, 74, 0.9), rgba(0, 44, 74, 0.9)),
-        url('//res2.weblium.site/res/6554b83cf9e5500010a0c6b9/655dfb8ad58255000ede5ecb') center/cover no-repeat fixed;
+        color: white;
         width: 150px;
         height: auto;
         margin-bottom: 15px;
@@ -180,9 +170,7 @@
     justify-content: space-between;
     gap: 20px;
     padding: 50px;
-    background: 
-    linear-gradient(rgba(0, 44, 74, 0.9), rgba(0, 44, 74, 0.9)),
-    url('//res2.weblium.site/res/6554b83cf9e5500010a0c6b9/655dfb8ad58255000ede5ecb') center/cover no-repeat fixed;
+    background-color: #7c83bb;
   }
   .section-block {
     text-align: center;
@@ -261,9 +249,7 @@
     display: flex;  /* Використовуємо flexbox для центрування */
     justify-content: center;  /* Центруємо по горизонталі */
     align-items: center;  /* Центруємо по вертикалі */
-    background: 
-    linear-gradient(rgba(0, 44, 74, 0.9), rgba(0, 44, 74, 0.9)),
-    url('//res2.weblium.site/res/6554b83cf9e5500010a0c6b9/655dfb8ad58255000ede5ecb') center/cover no-repeat fixed;
+    background-color: #f9f9f9;  /* Фон для контейнера */
   }
   
   .image-section img {
@@ -286,17 +272,5 @@
 }
 
   
-*{
-    margin: 0;
-    padding: 0;
-}
-.lists ul:hover {
-    cursor:pointer;
-    color: brown;
-    text-align: center;
-    padding:0;
-    font-size: 20;
-}
-.lists il:hover {
-    font-size: 18;
-}
+  
+  
