@@ -7,9 +7,26 @@
     height: 100vh;
     z-index: -1;
     background: 
-        linear-gradient(rgba(0, 44, 74, 0.9), rgba(0, 44, 74, 0.9)),
+        linear-gradient(rgb(0, 33, 54), rgba(0, 44, 74, 0.9)),
         url('//res2.weblium.site/res/6554b83cf9e5500010a0c6b9/655dfb8ad58255000ede5ecb') center/cover no-repeat fixed;
 }
+
+
+.highlight-star {
+  color: #FF7433;
+  font-size: 38px;
+}
+
+.divider {
+  grid-column: 1 / -1;
+  margin: 20px 0;
+}
+.comment-section .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
 .comment-section {
     font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
     padding: 0 32px;
@@ -21,6 +38,7 @@
     border-radius: 50%;
     overflow: hidden;
     flex-shrink: 0;
+    min-width: 80px;
 }
 
 .logo-img {
@@ -49,10 +67,9 @@
 }
 
 .left-comment, .right-comment {
-    display: flex;
-    flex-direction: column;
-    padding: 0 30px;
-
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .text-comment span {
     font-size: 16px;
@@ -67,11 +84,9 @@
 
 .photo-with-text {
     display: flex;
-    align-items: flex-start;
     gap: 15px;
-    max-width: 100%;
-    padding: 7.5px 0;
-}
+    align-items: flex-start;
+  }
 /* Зовнішній контейнер */
 .comment-wrapper {
     display: flex; /* Горизонтальне розміщення блоків */
@@ -89,6 +104,10 @@
     align-items: flex-start; /* Вирівнювання зліва */
     gap: 5px; /* Відстань між зірочкою і текстом */
 }
+.warm-text-words {
+    font-size: 18px;
+    color: #ffffff; /* Колір тексту (налаштуй) */
+}
 
 /* Блок із коментарем */
 .warm-comment {
@@ -105,14 +124,15 @@
     color: #ffffff; /* Колір тексту (налаштуй) */
     
 }
-.warm-text-words {
-    font-size: 12px;
-    color: #ffffff; /* Колір тексту (налаштуй) */
-}
+
 
 .divider {
     border: 0;
     height: 1px;
     background-color: #ccc;
     margin: 20px 0;
+}
+
+.text-comment em {
+    color: white;
 }
