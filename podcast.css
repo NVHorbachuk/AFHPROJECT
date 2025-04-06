@@ -1,51 +1,111 @@
+
 .podcasr_highlight-star{
     color: #055ea3;
     font-size: 38px;
 }
 
-.podcasts {
+.podcast-section__list{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
-.podcast-item {
-    
-    border-radius: 8px;
+.podcast-section__label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .podcast-section__icon {
+    color: #055ea3;
+    font-size: 38px;
+  }
+  
+  .podcast-section__tagline {
+    font-weight: bold;
+    color: #055ea3;
+    letter-spacing: 1px;
+  }
+  
+  .podcasts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    padding: 20px 0;
+  }
+  
+  .podcast-card {
+  
     overflow: hidden;
+    color: white;
     display: flex;
     flex-direction: column;
-}
-
-
-
-.podcast-item img {
-    width: 75%;
+    align-items: center;
+  }
+  
+  .podcast-card__image-wrapper {
+    background-color: #b4e0ff;
+    border-radius: 50%;
+    padding: 15px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+  }
+  
+  .podcast-card__image {
+    width: 100%;
     height: auto;
     object-fit: cover;
-}
-
-.podcast-info {
+  }
+  
+  .podcast-card__info {
     padding: 20px;
-}
-
-.podcast-info h3 {
-    margin-top: 0;
-    font-size: 1.5em;
-    color: white;
-}
-
-.podcast-info p {
-    color: white;
-    margin: 5px 0;
-}
-
-.podcast-info button {
+  }
+  
+  .podcast-card__title {
+    font-size: 1.4rem;
+    margin: 0 0 10px;
+  }
+  
+  .podcast-card__meta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #cccccc;
+  }
+  
+  .podcast-card__meta-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .podcast-card__icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .podcast-card__text {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+  
+  .podcast-card__button {
     background-color: #0dc185;
     color: white;
     padding: 10px 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
-}
+  }
+  
