@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="yw-section.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="features.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+          font-family: 'Roboto', sans-serif;
+        }
+      </style>
+      
     </head>
 
 
@@ -21,7 +28,6 @@
 <header>
         <link rel="stylesheet" href="./header.css">
         <html lang="uk">
-          <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
           <script src="https://unpkg.com/htmx.org@1.9.6"></script>
         <head>
         <header class="site-header">
@@ -54,32 +60,39 @@
             </div>
         </section>
         <section class="three-sections">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
             <div class="section-block">
-              <h3>Number One Radio Stationin LVIV city</h3>
-              <p>Embark on an electrifying auditory adventure through the heart of the city that never sleeps.</p>
+              <h3>Number One Radio Station<br>in LVIV city</h3>
+              <p>Embark on an electrifying auditory adventure<br>through the heart of the city that never sleeps.</p>
             </div>
           
             <div class="section-block">
                 <a href="https://example.com/radio-waves" target="_blank">
-                  <img src="https://thumbs.dreamstime.com/b/free-wi-fi-icon-connection-zone-wifi-vector-symbol-radio-waves-signal-171192557.jpg?w=768" alt="Radio Waves">
+                  <img src="img/2639896_radio_waves_icon.png" "alt="Radio Waves">
                 </a>
                 <p>- 95.4 FM -</p>
               </div>
               
           
-            <div class="section-block">
-              <section class="our-podcasts">
-                <h4>Our podcasts on:</h4>
-                    <div class="podcast-links">
-                        <li class="podcast-links"><img class="podcast-links" src="img/spotify.svg" alt="Spotify"><a class="podcast-links" href="#">Spotify →</a></li>
-                        <li class="podcast-links"><img class="podcast-links" src="img/play.svg" alt="YouTube Music"><a class="podcast-links" href="#">YouTube Music →</a></li>
-                        <li class="podcast-links"><img class="podcast-links" src="img/soundcloud.svg" alt="SoundCloud"><a class="podcast-links" href="#">SoundCloud →</a></li>
-                        <li class="podcast-links"><img class="podcast-links" src="img/podcasts.svg" alt="Apple Podcasts "><a class="podcast-links" href="#">Apple Podcasts →</a></li>
-                      </ul>
-                    </div>
-                  
-                </div>
-              </section>
+              <div class="section-block">
+                <section class="our-podcasts">
+                  <h4>Our podcasts on:</h4>
+                  <div class="podcast-links">
+                    <!-- Окремий список для Spotify і YouTube -->
+                    <ul class="first-group">
+                      <li><img src="img/spotify.svg" alt="Spotify"><a href="#">Spotify →</a></li>
+                      <li><img src="img/play.svg" alt="YouTube Music"><a href="#">YouTube Music →</a></li>
+                    </ul>
+              
+                    <!-- Окремий список для SoundCloud і Apple Podcasts -->
+                    <ul class="second-group">
+                      <li><img src="img/soundcloud.svg" alt="SoundCloud"><a href="#">SoundCloud →</a></li>
+                      <li><img src="img/podcasts.svg" alt="Apple Podcasts"><a href="#">Apple Podcasts →</a></li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+              
               
               
             </div>
