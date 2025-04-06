@@ -1,0 +1,51 @@
+.podcasr_highlight-star{
+    color: #055ea3;
+    font-size: 38px;
+}
+
+.podcasts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.podcast-item {
+    
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.podcast-item img {
+    width: 75%;
+    height: auto;
+    object-fit: cover;
+}
+
+.podcast-info {
+    padding: 20px;
+}
+
+.podcast-info h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: white;
+}
+
+.podcast-info p {
+    color: white;
+    margin: 5px 0;
+}
+
+.podcast-info button {
+    background-color: #0dc185;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
