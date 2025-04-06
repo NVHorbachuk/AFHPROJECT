@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="testimonials.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="features.css">
+    <link rel="stylesheet" href="genres.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -104,6 +105,63 @@
      </header>
      <!-- The information between the BODY and /BODY tags is displayed.-->
     <main>
+      <section class="genres">
+        <div class="genres__container">
+            <div class="genres__info">
+                <div class="genres__info-left">
+                    <span>*</span>
+                    <h2>popular songs</h2>
+                </div>
+                <h3 class="genres__info-subtitle">Explore our <u><strong>best songs</strong></u> of the week, from rap
+                    to jazz. Work, dance, and dream with us.</h3>
+            </div>
+            <div class="genres__divider"></div>
+            <div class="genres__swiper">
+                <button class="genres__swiper-button genres__swiper-button-prev">&#10094;</button>
+                <div class="genres__cards">
+                    <div class="genres__card">
+                        <div class="genres__card-img">
+                            <img src="img/lucy-Ingoo.webp" alt="lucy-Ingoo">
+                        </div>
+                        <h4 class="genres__card-title">Jazz</h4>
+                        <p class="genres__song-name">"City Lights"</p>
+                        <p class="genres__song-author">Lucy Ingoo</p>
+                    </div>
+                    <div class="genres__card">
+                        <div class="genres__card-img">
+                            <img src="img/genres_TwoWrack.webp" alt="TwoWrack">
+                        </div>
+                        <h4 class="genres__card-title">RAP</h4>
+                        <p class="genres__song-name">"Celestial Whispers"</p>
+                        <p class="genres__song-author">TwoWrack</p>
+                    </div>
+                    <div class="genres__card">
+                        <div class="genres__card-img">
+                            <img src="img/genres_Luna-Solitaire.webp" alt="Luna Solitaire">
+                        </div>
+                        <h4 class="genres__card-title">Dream pop</h4>
+                        <p class="genres__song-name">"Morning , Love"</p>
+                        <p class="genres__song-author">Luna Solitaire</p>
+                    </div>
+                    <div class="genres__card">
+                        <div class="genres__card-img">
+                            <img src="img/genres_David-Guetti.webp" alt="David Guetti">
+                        </div>
+                        <h4 class="genres__card-title">Techno</h4>
+                        <p class="genres__song-name">"Golden Hour"</p>
+                        <p class="genres__song-author">David Guetti</p>
+                    </div>
+                </div>
+                <button class="genres__swiper-button genres__swiper-button-next">&#10095;</button>
+            </div>
+            <div class="genres__list">
+                <h4 class="genres__list-title">top 10 by genre</h4>
+                <p class="genres__list-text">pop <span class="list-text-blu">/</span> rock <span class="list-text-dark-blu">/</span> hip-hop <span class="list-text-orange">/</span> rap <span class="list-text-dark-blu">/</span> </p>
+                <p class="genres__list-text">alternative <span class="list-text-dark-blu">/</span> indie <span class="list-text-blu">/</span> post punk <span class="list-text-orange">/</span> jazz</p>
+                <p class="genres__list-text"> <span class="list-text-orange">/</span> music podcasts <span class="list-text-dark-blu">/</span></p>
+            </div>
+        </div>
+    </section>
         <div class="background-fixed"></div>
         <!-- Тут відгуки -->
         <section class="comment-section" data-hx-get="testimonials.html" data-hx-trigger="load" data-hx-swap="outerHTML"></section>
