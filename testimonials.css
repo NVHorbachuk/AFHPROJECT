@@ -70,6 +70,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding-top: 55px;
 }
 .text-comment span {
     font-size: 16px;
@@ -91,7 +92,7 @@
 .comment-wrapper {
     display: flex; /* Горизонтальне розміщення блоків */
     justify-content: space-between; /* Текст по обидва боки */
-    align-items: flex-start; /* Вирівнювання по верху */
+    align-items: flex-end; /* Вирівнювання по верху */
     max-width: 1200px; /* Обмеження ширини */
     margin: 0 auto; /* Центрування */
     padding: 20px; /* Внутрішні відступи (опціонально) */
@@ -121,8 +122,9 @@
 /* Стилі для тексту */
 .warm-comment-text {
     font-size: 21px;
-    color: #ffffff; /* Колір тексту (налаштуй) */
-    
+    color: #ffffff; 
+    text-align: justify;
+    padding: 0 15px;
 }
 
 
