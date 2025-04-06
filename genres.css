@@ -75,6 +75,9 @@
 .genres__card {
     max-width: 280px;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .genres__card-img {
