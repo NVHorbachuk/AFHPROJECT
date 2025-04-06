@@ -20,6 +20,9 @@
 .divider {
   grid-column: 1 / -1;
   margin: 20px 0;
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
 }
 .comment-section .container {
   display: grid;
@@ -48,15 +51,6 @@
     object-fit: contain;
     object-position: 50% 50%;
     border-radius: 50%;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 /* Контейнер для тексту і автора */
@@ -128,13 +122,144 @@
 }
 
 
-.divider {
-    border: 0;
-    height: 1px;
-    background-color: #ccc;
-    margin: 20px 0;
-}
+
 
 .text-comment em {
     color: white;
+}
+
+/* Секція новин */
+.news {
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+    padding: 120px 0 40px;
+}
+
+.news-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto; /* Центрування */
+  padding: 20px; /* Внутрішні відступи (опціонально) */
+}
+
+.news-words {
+  flex: 0 0 50%; /* Лівий елемент займає більше місця */
+}
+
+.news-comment {
+  flex: 0 0 50%; /* Правий елемент займає менше місця */
+  word-wrap: break-word; /* Перенос тексту на два рядки */
+  padding: 20px;
+  font-size: 19px;  
+  font-weight: 500;
+}
+.news-highlight {
+  color: rgb(219, 219, 219);
+  font-family: 'Noto Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+.news-title {
+  color: white;
+  margin-top: 20px;
+  font-size: 36px;
+  font-family: 'Righteous', cursive;
+}
+
+.news-text {
+  color: rgb(204, 204, 204);
+}
+
+
+.wrapper-articles {
+    padding: 40px;
+}
+
+.articles-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Три колонки однакової ширини */
+    gap: 20px; /* Відступи між картками */
+    max-width: 1200px; /* Обмеження ширини */
+    margin: 0 auto; /* Центрування */
+    padding: 20px; /* Внутрішні відступи (опціонально) */
+}
+
+.left-article, .center-article, .right-article   {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+.article-img {
+    display: block;
+    position: relative;
+    width: 100%;  /* Забезпечить ширину 100% від батьківського елементу */
+    height: 200px;  /* Визначить висоту зображення */
+}
+.article-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.small-text {
+    color: #ff7433;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 17px;
+    margin-top: 20px;
+}
+.heading-text {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-top: 20px;
+}
+.body-text {
+    color:#ccc;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+
+.article-more {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff; /* Початковий колір (помаранчевий) */
+    text-decoration: none; /* Прибираємо початкове підкреслення */
+    margin-top: 28px;
+    background: none; /* Прибираємо фон, якщо він був */
+    border: none; /* Прибираємо рамку, якщо вона була */
+    padding: 0; /* Прибираємо внутрішні відступи, щоб виглядало як текст */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Плавний перехід для кольору і підкреслення */
+    border-bottom: 1px solid transparent; /* Початкове "підкреслення" (прозоре) */
+}
+.article-more:hover {
+    color: #fe226a; /* Синій колір при наведенні */
+    text-decoration: underline; /* Додаємо підкреслення при наведенні */
+    
+}
+
+/* Адаптивність для малих екранів */
+@media (max-width: 768px) {
+    .articles-inner {
+        grid-template-columns: 1fr; /* Одна колонка на малих екранах */
+    }
+
+    .left-article, .center-article, .right-article {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section-header h2 {
+        font-size: 28px; /* Зменшуємо розмір заголовка на малих екранах */
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+    }
 }
